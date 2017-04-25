@@ -97,7 +97,7 @@ public class UsuarioService {
     }
 
     public Perfil Autenticacion(Usuario o){
-        String h;
+
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();

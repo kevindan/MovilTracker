@@ -8,9 +8,8 @@
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <user-name>root</user-name>
-      <introspection-schemas>*:moviltrackerdb</introspection-schemas>
+      <user-password>dfc1dfcfdfdcdfc3dfc4dfeadf9bdf98df99df9edf9fdf9c</user-password>
       <resolve-scope>moviltrackerdb:</resolve-scope>
-      <unqualified-resolve-schemas>moviltrackerdb:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

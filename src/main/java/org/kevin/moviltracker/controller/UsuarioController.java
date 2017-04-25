@@ -9,11 +9,7 @@ import org.kevin.moviltracker.model.UsuarioService;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.core.MediaType;
-import java.io.IOException;
 
 /**
  * Created by USUARIO on 6/04/2017.
@@ -40,5 +36,4 @@ public class UsuarioController {
         }
         return perfil;
     }
-
 }
