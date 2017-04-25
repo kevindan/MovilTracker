@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="moviltrackerdb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="baseprueba"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="kardex"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="oncodatdb"/>
+    <schema id="8" parent="1" name="performance_schema"/>
+    <schema id="9" parent="1" name="sistramdoc_db"/>
+    <schema id="10" parent="1" name="sys"/>
+    <table id="11" parent="2" name="asignacion"/>
+    <table id="12" parent="2" name="comisaria"/>
+    <table id="13" parent="2" name="efectivo"/>
+    <table id="14" parent="2" name="grado"/>
+    <table id="15" parent="2" name="marca"/>
+    <table id="16" parent="2" name="usuario"/>
+    <table id="17" parent="2" name="vehiculo"/>
+    <table id="18" parent="2" name="zona"/>
+    <column id="19" parent="11" name="asignacion_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="11" name="efectivo_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="21" parent="11" name="vehiculo_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="comisaria_id">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="23" parent="11" name="zona_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="24" parent="11" name="fecha_asignacion">
+      <Position>6</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="25" parent="11" name="activo">
+      <Position>7</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="26" parent="11" name="PRIMARY">
+      <ColNames>asignacion_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="27" parent="12" name="comisaria_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="28" parent="12" name="comisaria">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <column id="29" parent="12" name="activo">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="30" parent="12" name="PRIMARY">
+      <ColNames>comisaria_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="13" name="efectivo_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="13" name="efectivo_cip">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="33" parent="13" name="nombres">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="34" parent="13" name="apellidos">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="35" parent="13" name="grado_id">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="36" parent="13" name="activo">
+      <Position>6</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="37" parent="13" name="PRIMARY">
+      <ColNames>efectivo_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="14" name="grado_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="14" name="activo">
+      <Position>3</Position>
+      <DataType>bit(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="40" parent="14" name="grado">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="41" parent="14" name="PRIMARY">
+      <ColNames>grado_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="15" name="marca_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="15" name="marca">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="44" parent="15" name="activo">
+      <Position>3</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="45" parent="15" name="PRIMARY">
+      <ColNames>marca_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="16" name="efectivo_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="16" name="activo">
+      <Position>5</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="48" parent="16" name="contrasena">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="49" parent="16" name="efectivo_cip">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="16" name="usuario_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <key id="51" parent="16" name="PRIMARY">
+      <ColNames>usuario_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="17" name="vehiculo_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="17" name="nro_placa">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="54" parent="17" name="marca_id">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="55" parent="17" name="activo">
+      <Position>4</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <column id="56" parent="17" name="anio_fabricacion">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="57" parent="17" name="fk_vehiculo_marca_idx">
+      <ColNames>marca_id</ColNames>
+    </index>
+    <key id="58" parent="17" name="PRIMARY">
+      <ColNames>vehiculo_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="59" parent="17" name="fk_vehiculo_marca">
+      <ColNames>marca_id</ColNames>
+      <RefSchemaName>moviltrackerdb</RefSchemaName>
+      <RefTableName>marca</RefTableName>
+      <RefColNames>marca_id</RefColNames>
+      <OnUpdate>no-action</OnUpdate>
+      <OnDelete>no-action</OnDelete>
+    </foreign-key>
+    <column id="60" parent="18" name="zona_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="61" parent="18" name="zona">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="62" parent="18" name="activo">
+      <Position>3</Position>
+      <DataType>bit(1)|0</DataType>
+      <DefaultExpression>b&apos;1&apos;</DefaultExpression>
+    </column>
+    <key id="63" parent="18" name="PRIMARY">
+      <ColNames>zona_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
